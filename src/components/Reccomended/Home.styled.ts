@@ -6,4 +6,5 @@ export const ItemsContainer = styled.div`
   flex-wrap: wrap;
   gap: 15px;
   margin: 16px;
+  max-width: 1170px;
 `;

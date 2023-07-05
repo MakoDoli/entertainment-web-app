@@ -7,10 +7,9 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./components/Reccomended/Home";
 import Movies from "./components/Movies/Movies";
 import TVSeries from "./components/TVSeries/TVSeries";
+import Trending from "./components/Trending/Trending";
 import data from "./data.json";
 import Bookmarks from "./components/Bookmarks/Bookmarks";
-
-
 
 function App() {
   const [search, setSearch] = useState("");
@@ -63,6 +62,7 @@ function App() {
               placeholder="Search for movies or TV series"
             />
           </SearchBar>
+          <Trending info={items} />
           <Routes>
             <Route
               path="/"

@@ -16,7 +16,7 @@ body {
     font-family: 'Outfit';
     font-style: normal;
     background-color: var(--darkBlue);
-    
+    overflow-x: hidden;
 }
 
 h1 {
