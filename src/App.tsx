@@ -10,25 +10,7 @@ import TVSeries from "./components/TVSeries/TVSeries";
 import data from "./data.json";
 import Bookmarks from "./components/Bookmarks/Bookmarks";
 
-interface DataType {
-  title: string;
-  thumbnail: {
-    trending?: {
-      small: string;
-      large: string;
-    };
-    regular: {
-      small: string;
-      medium: string;
-      large: string;
-    };
-  };
-  year: number;
-  category: string;
-  rating: string;
-  isBookmarked: boolean;
-  isTrending: boolean;
-}
+
 
 function App() {
   const [search, setSearch] = useState("");
