@@ -4,10 +4,20 @@ export const StyledHeader = styled.header`
   height: 56px;
   background-color: var(--blue);
   color: var(--red);
-  width: 100%;
   padding: 16px;
   justify-content: space-between;
   display: flex;
+  @media screen and (min-width: 755px) {
+    height: 72px;
+    width: 706px;
+    margin: 0 auto;
+    margin-top: 23px;
+
+    border-radius: 10px;
+  }
+  @media screen and (min-width: 974px) {
+    width: 930px;
+  }
   @media screen and (min-width: 1050px) {
     flex-direction: column;
     width: 96px;
