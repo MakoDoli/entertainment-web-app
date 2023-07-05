@@ -62,7 +62,7 @@ function App() {
               placeholder="Search for movies or TV series"
             />
           </SearchBar>
-          <Trending info={items} />
+          <Trending info={items} handler={addBookmark} />
           <Routes>
             <Route
               path="/"
