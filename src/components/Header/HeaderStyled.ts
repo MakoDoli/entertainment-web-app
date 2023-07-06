@@ -53,7 +53,7 @@ export const NavIcon = styled.div<{ mode?: boolean }>`
     }
     &:hover {
       path {
-        fill: #ffffff;
+        fill: #fc4747;
       }
     }
   }
