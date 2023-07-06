@@ -2,39 +2,67 @@ import styled from "styled-components";
 
 export const SingleTrend = styled.div`
   position: relative;
+  animation: move 35s forwards infinite;
+  animation-delay: 5s;
+  @keyframes move {
+    0% {
+      transform: translateX(0);
+    }
+    14% {
+      transform: translateX(-150%);
+    }
+    28% {
+      transform: translateX(-150%);
+    }
+    56% {
+      transform: translateX(-270%);
+    }
+    71% {
+      transform: translateX(-270%);
+    }
+    85% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
   img {
     width: 240px;
     height: 140px;
     border-radius: 8px;
   }
-  h2 {
+  h3 {
     font-size: 14px;
     font-family: Outfit;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     color: white;
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
   }
   @media screen and (min-width: 755px) {
     img {
       width: 470px;
       height: 230px;
     }
-    h2 {
-      font-size: 18px;
+    h3 {
+      font-size: 24px;
     }
   }
 `;
 export const OverlayTrend = styled.div`
-  width: 164px;
-  height: 110px;
+  width: 240px;
+  height: 140px;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
-
   transition: 0.3s ease;
   &:hover {
     opacity: 1;
@@ -56,9 +84,12 @@ export const DescriptionTrend = styled.div`
   color: white;
   align-items: center;
   height: 30px;
-
+  position: absolute;
+  bottom: 33px;
+  left: 15px;
   @media screen and (min-width: 755px) {
-    font-size: 13px;
+    font-size: 15px;
+    bottom: 40px;
   }
 `;
 export const Icon = styled.div`

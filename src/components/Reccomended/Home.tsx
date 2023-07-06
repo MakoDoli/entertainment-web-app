@@ -24,12 +24,17 @@ interface Info {
 interface Props {
   info: Info[];
   handler: (string: string) => void;
+  trends: boolean;
 }
 
 export default function Home(props: Props) {
   return (
     <>
-      <Trending info={props.info} handler={props.handler} />
+      {props.trends ? (
+        <Trending info={props.info} handler={props.handler} />
+      ) : (
+        ""
+      )}
       <h1>Reccomended for you</h1>
       <ItemsContainer>
         {props.info.map((elem, index) => (

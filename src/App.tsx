@@ -16,6 +16,7 @@ function App() {
   const [items, setItems] = useState(data);
   const [filtered, setFiltered] = useState(items);
   const [info, setInfo] = useState(items);
+  const [trends, setTrends] = useState(false);
   console.log(search);
   const addBookmark = (title: string) => {
     setItems(
@@ -44,8 +45,10 @@ function App() {
   useEffect(() => {
     if (search === "") {
       setInfo(items);
+      setTrends(true);
     } else if (search !== "") {
       setInfo(filtered);
+      setTrends(false);
     }
   }, [search, items, filtered]);
   return (
@@ -66,7 +69,9 @@ function App() {
           <Routes>
             <Route
               path="/"
-              element={<Home info={info} handler={addBookmark} />}
+              element={
+                <Home info={info} handler={addBookmark} trends={trends} />
+              }
             />
             <Route
               path="movies"

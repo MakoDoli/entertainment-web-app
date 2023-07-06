@@ -87,7 +87,7 @@ export default function TrendingItem(props: Props) {
         <DotTrend></DotTrend>
         <p>{props.rating}</p>
       </DescriptionTrend>
-      <h2>{props.title}</h2>
+      <h3>{props.title}</h3>
     </SingleTrend>
   );
 }
