@@ -15,8 +15,8 @@ export const StyledHeader = styled.header`
 
     border-radius: 10px;
   }
-  @media screen and (min-width: 974px) {
-    width: 930px;
+  @media screen and (min-width: 1028px) {
+    width: 975px;
   }
   @media screen and (min-width: 1050px) {
     flex-direction: column;

@@ -7,7 +7,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./components/Reccomended/Home";
 import Movies from "./components/Movies/Movies";
 import TVSeries from "./components/TVSeries/TVSeries";
-import Trending from "./components/Trending/Trending";
+
 import data from "./data.json";
 import Bookmarks from "./components/Bookmarks/Bookmarks";
 
@@ -62,7 +62,7 @@ function App() {
               placeholder="Search for movies or TV series"
             />
           </SearchBar>
-          <Trending info={items} handler={addBookmark} />
+
           <Routes>
             <Route
               path="/"
@@ -118,5 +118,6 @@ const Input = styled.input`
   }
   @media screen and (min-width: 768px) {
     font-size: 24px;
+    width: 348px;
   }
 `;

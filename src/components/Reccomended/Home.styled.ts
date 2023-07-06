@@ -7,4 +7,10 @@ export const ItemsContainer = styled.div`
   gap: 15px;
   margin: 16px;
   max-width: 1170px;
+  @media screen and (min-width: 755px) {
+    gap: 30px;
+  }
+  @media screen and (min-width: 1050px) {
+    gap: 16px;
+  }
 `;

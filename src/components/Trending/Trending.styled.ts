@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-export const Single = styled.div`
+export const SingleTrend = styled.div`
   position: relative;
   img {
-    width: 164px;
-    height: 110px;
+    width: 240px;
+    height: 140px;
     border-radius: 8px;
   }
   h2 {
@@ -17,21 +17,15 @@ export const Single = styled.div`
   }
   @media screen and (min-width: 755px) {
     img {
-      width: 220px;
-      height: 140px;
+      width: 470px;
+      height: 230px;
     }
     h2 {
       font-size: 18px;
     }
   }
-  @media screen and (min-width: 1050px) {
-    img {
-      width: 280px;
-      height: 174px;
-    }
-  }
 `;
-export const Overlay = styled.div`
+export const OverlayTrend = styled.div`
   width: 164px;
   height: 110px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -46,15 +40,11 @@ export const Overlay = styled.div`
     opacity: 1;
   }
   @media screen and (min-width: 755px) {
-    width: 220px;
-    height: 140px;
-  }
-  @media screen and (min-width: 1050px) {
-    width: 280px;
-    height: 174px;
+    width: 470px;
+    height: 230px;
   }
 `;
-export const Description = styled.div`
+export const DescriptionTrend = styled.div`
   display: flex;
   gap: 8px;
   font-size: 11px;
@@ -76,7 +66,7 @@ export const Icon = styled.div`
   display: grid;
   place-content: center;
 `;
-export const Dot = styled.div`
+export const DotTrend = styled.div`
   width: 3px;
   height: 3px;
   background-color: white;
@@ -84,7 +74,7 @@ export const Dot = styled.div`
   border-radius: 50%;
 `;
 
-export const PlayButton = styled.div`
+export const PlayButtonTrend = styled.div`
   width: 117px;
   height: 48px;
   border-radius: 29px;
@@ -95,7 +85,7 @@ export const PlayButton = styled.div`
 
   margin-top: 5px;
 `;
-export const PlayArrow = styled.div`
+export const PlayArrowTrend = styled.div`
   z-index: 2;
   display: flex;
   align-items: center;
@@ -111,7 +101,7 @@ export const PlayArrow = styled.div`
     margin-left: 19px;
   }
 `;
-export const Bookmark = styled.div`
+export const BookmarkTrend = styled.div`
   width: 32px;
   background-color: rgba(0, 0, 0, 0.5);
   height: 32px;

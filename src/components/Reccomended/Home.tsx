@@ -1,7 +1,6 @@
 import { ItemsContainer } from "./Home.styled";
 import Item from "./Item";
-
-// import data from "../../data.json";
+import Trending from "../Trending/Trending";
 
 interface Info {
   title: string;
@@ -30,6 +29,7 @@ interface Props {
 export default function Home(props: Props) {
   return (
     <>
+      <Trending info={props.info} handler={props.handler} />
       <h1>Reccomended for you</h1>
       <ItemsContainer>
         {props.info.map((elem, index) => (
